@@ -16,8 +16,10 @@ int main()
     
     std::cout << "Введите фамилию: ";
     std::getline(std::cin, lastName);
+
+    std::string result = firstName + " " + lastName;
     
-    std::cout << "Здравствуйте, " << firstName << " " << lastName << "!" << std::endl;
+    std::cout << "Здравствуйте, " + result + "!" << std::endl;
 
     return 0;
 }
